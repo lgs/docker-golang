@@ -31,6 +31,5 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 ENV GOPATH /go
 ENV PATH   $PATH:/usr/local/go/bin:$GOPATH/bin
 
-ENTRYPOINT ["go"]
-CMD ["env"]
+CMD ["go", "env"]
 
